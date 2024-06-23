@@ -15,9 +15,17 @@ checksum = Checksum({
     'file': 'storage/example.pbd'
 })
 
+@app.route('/api')
+def api():
+    return downloads.list()
+
 @app.route('/')
-def home():
-    return checksum.get()
+def index():
+    return render_template(
+        'index.html',
+        
+        site_name='Scimon: Hub'
+    )
 
 if __name__ == '__main__':
     app.run(debug=True)
