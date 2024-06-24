@@ -1,0 +1,72 @@
+.lib-content > .footer > .meta {
+    display: flex;
+    align-items: center;
+    margin-bottom: -2em;
+    height: var(--spacing-xl);
+    justify-content: space-between;
+    line-height: var(--spacing-xl);
+    border-top: .1em solid var(--color-border);
+}
+
+.lib-content > .footer > .meta > .left > .footer-btn,
+.lib-content > .footer > .meta > .right > .footer-btn {
+    height: 3em;
+    float: right;
+    color: inherit;
+    cursor: pointer;
+    font-size: .8em;
+    line-height: 3em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    margin-top: var(--spacing-sm);
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+    border-radius: var(--border-radius);
+}
+
+.lib-content > .footer > .meta > .left > .footer-btn > .fas, 
+.lib-content > .footer > .meta > .right > .footer-btn > .fas {
+    float: left;
+    line-height: 3em;
+}
+
+.lib-content > .footer > .meta > .left > .footer-btn > .text, 
+.lib-content > .footer > .meta > .right > .footer-btn > .text {
+    float: left;
+    display: none;
+}
+
+.lib-content > .footer > .meta > .left > .footer-btn {
+    float: left;
+    margin-right: var(--spacing-sm);
+}
+
+.lib-content > .footer > .meta > .right > .footer-btn {
+    float: left;
+    margin-left: var(--spacing-sm);
+}
+
+.lib-content > .footer > .meta > .left > .actived, 
+.lib-content > .footer > .meta > .right > .actived, 
+.lib-content > .footer > .meta > .left > .footer-btn:hover, 
+.lib-content > .footer > .meta > .right > .footer-btn:hover {
+    background: var(--color-border);
+    animation: bg-color .5s ease-in-out forwards;
+}
+
+.lib-content > .footer > .meta > .left > .actived > .text, 
+.lib-content > .footer > .meta > .right > .actived > .text, 
+.lib-content > .footer > .meta > .left > .footer-btn:hover > .text, 
+.lib-content > .footer > .meta > .right > .footer-btn:hover > .text {
+    display: block;
+    animation: margin-right .5s ease-in-out forwards;
+}
+
+.lib-content > .footer > .meta > .left > .actived, 
+.lib-content > .footer > .meta > .right > .actived, 
+.lib-content > .footer > .meta > .left > .footer-btn:hover, 
+.lib-content > .footer > .meta > .right > .footer-btn:hover {
+    background: var(--color-border);
+    animation: bg-color .5s ease-in-out forwards;
+}

@@ -1,0 +1,11 @@
+.lib-content {
+    width: 800px;
+    margin: auto;
+    margin-top: 60px;
+    box-sizing: border-box;
+    padding: var(--spacing-xl);
+    box-shadow: var(--box-shadow);
+    background: var(--color-pre-bg);
+    border-radius: var(--border-radius);
+    border: .1em solid var(--color-border);
+}

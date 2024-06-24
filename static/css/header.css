@@ -1,0 +1,148 @@
+header{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 99999999999;
+    box-sizing: border-box;
+    justify-content: center;
+    color: var(--color-text);
+    height: var(--header-size);
+    box-shadow: var(--box-shadow);
+    background: var(--color-pre-bg);
+}
+
+header > .logo {
+    left: 50%;
+    width: 10em;
+    float: left;
+	height: 100%;
+	outline: none;
+	cursor: pointer;
+    position: absolute;
+    background-size: 70%;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-image: var(--logo);
+}
+
+header > .logo:hover { animation: bg-color .3s ease-in-out forwards; }
+
+header > .icon {
+    height: var(--header-size);
+    line-height: var(--header-size);
+}
+
+header > .label {
+    float: left;
+    cursor: default;
+    font-weight: 600;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: var(--header-size);
+}
+
+header > .tab {
+    float: left;
+    width: auto;
+    min-width: 6em;
+    cursor: pointer;
+    font-size: .8em;
+    font-weight: 600;
+    padding-left: 1em;
+    text-align: center;
+    line-height: 3.7em;
+    padding-right: 1em;
+    text-decoration: none;
+    color: inherit !important;
+}
+
+header > .actived, header > .tab:hover {
+    text-decoration: none;
+    background: var(--color-border);
+}
+
+header > .menu {
+    float: left;
+    width: auto;
+    cursor: pointer;
+    font-size: .8em;
+    font-weight: 600;
+    text-align: center;
+    line-height: 3.7em;
+    text-decoration: none;
+    color: inherit !important;
+    border-left: 0 solid var(--color-text);
+}
+
+header > .menu > .fas {
+    float: left;
+    width: 3.7em;
+    line-height: 3.7em;
+}
+
+header > .menu > .text {
+    float: left;
+    display: none;
+    padding-right: 1em;
+}
+
+header > .menu:hover { animation: only-border-left-slide .3s ease-in-out forwards; }
+
+header > .menu:hover > .text {
+    display: block;
+    animation: pdd-left .3s ease-in-out forwards;
+}
+
+header > .menu:hover { background: var(--color-border); }
+
+header > .actived-menu {
+    background: var(--color-border) !important;
+    border-left: .5em solid var(--color-text) !important;
+}
+
+header > .actived-menu > .text {
+    display: block !important;
+    font-weight: 700 !important;
+    padding-left: 1em !important;
+}
+
+header > .actived-logo { animation: logo-effect .3s ease-in-out forwards; }
+
+header > .nav {
+    float: right;
+    height: var(--header-size);
+    line-height: var(--header-size);
+}
+
+header > .nav > .icon {
+    width: 3em;
+    float: left;
+    color: inherit;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    line-height: calc(var(--header-size) - .05em);
+}
+
+header > .nav > .icon:hover, header > .nav > .actived { background: var(--color-border); }
+
+header > .icon {
+    float: left;
+    width: 3.6em;
+    height: 3.7em;
+    cursor: pointer;
+    font-size: .8em;
+    line-height: 3.7em;
+    text-align: center;
+    vertical-align: middle;
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+header > .icon:hover { background: var(--color-border); }
+
+#scrollToTopBtn{ display: none; }
